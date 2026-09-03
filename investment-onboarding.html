@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Investment App — UX Case Study | Swapnil Jadhav</title>
+
+  <meta name="description"
+    content="UX case study by Swapnil Jadhav — designing a simpler mutual fund investment experience for NRIs.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!--
+    IMPORTANT:
+    Keep your existing shared stylesheet / portfolio CSS here.
+    Do not create a second visual system for this page.
+  -->
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/case-study.css">
+
+
+</head>
+
+
+<body>
+
+
+  <!-- =====================================================
+       SHARED HEADER
+       Injected by js/components.js
+  ====================================================== -->
+
+  <div id="site-header"></div>
+
+
+  <main>
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <header class="hero">
+
+      <div class="container">
+
+        <span class="eyebrow">
+          Investment App · Product Design
+        </span>
+
+        <h1>
+          Making investing simpler for NRIs.
+        </h1>
+
+        <p class="hero-intro">
+          A mutual fund investment experience designed to help NRIs
+          onboard, complete their investment setup and start investing
+          in India with greater clarity and confidence.
+        </p>
+
+
+        <div class="hero-meta">
+
+          <div class="meta-item">
+            <span class="meta-label">Role</span>
+            <span class="meta-value">
+              UI/UX Designer
+            </span>
+          </div>
+
+          <div class="meta-item">
+            <span class="meta-label">Focus</span>
+            <span class="meta-value">
+              Product Design · UX · UI
+            </span>
+          </div>
+
+          <div class="meta-item">
+            <span class="meta-label">Domain</span>
+            <span class="meta-value">
+              Fintech · Mutual Funds
+            </span>
+          </div>
+
+          <div class="meta-item">
+            <span class="meta-label">Platform</span>
+            <span class="meta-value">
+              Mobile Application
+            </span>
+          </div>
+
+        </div>
+
+
+        <div class="hero-image reveal">
+
+          <img src="assets/investapp/onboarding-hero.png" alt="Investment App onboarding screens">
+
+        </div>
+
+      </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         01 — THE CONTEXT
+    ====================================================== -->
+
+    <section class="section-border">
+
+      <div class="container section-grid">
+
+        <div>
+
+          <div class="section-number">
+            01
+          </div>
+
+          <div class="section-label">
+            The context
+          </div>
+
+        </div>
+
+
+        <div class="content reveal">
+
+          <h2>
+            Investing in India shouldn't
+            feel complicated from abroad.
+          </h2>
+
+          <p class="lead">
+            For an NRI, investing in Indian mutual funds involves more
+            than simply choosing a fund.
+          </p>
+
+          <p>
+            Users may need to provide personal information, tax residency
+            details, professional information, Indian bank details and
+            nominee information before they can start investing.
+          </p>
+
+          <p>
+            The challenge was to turn this collection of requirements
+            into an onboarding experience that feels clear rather than
+            administrative.
+          </p>
+
+
+          <div class="insight">
+
+            <div class="insight-label">
+              The design question
+            </div>
+
+            <p>
+              How might we make a compliance-heavy investment onboarding
+              experience feel simple, understandable and trustworthy?
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         02 — THE CHALLENGE
+    ====================================================== -->
+
+    <section class="dark-section">
+
+      <div class="container section-grid">
+
+        <div>
+
+          <div class="section-number">
+            02
+          </div>
+
+          <div class="section-label">
+            The challenge
+          </div>
+
+        </div>
+
+
+        <div class="content reveal">
+
+          <h2>
+            The user isn't just
+            opening an account.
+          </h2>
+
+          <p class="lead">
+            They are making a financial decision while navigating
+            unfamiliar requirements.
+          </p>
+
+
+          <div class="problem-list">
+
+
+            <div class="problem-item">
+
+              <div class="num">
+                01
+              </div>
+
+              <div>
+
+                <h3>
+                  Too many details upfront
+                </h3>
+
+                <p>
+                  Personal, tax, professional, banking and nominee
+                  information can make onboarding feel overwhelming
+                  when presented as one large form.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <div class="problem-item">
+
+              <div class="num">
+                02
+              </div>
+
+              <div>
+
+                <h3>
+                  Financial information needs trust
+                </h3>
+
+                <p>
+                  Users need to understand why information is being
+                  requested before they feel comfortable providing it.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <div class="problem-item">
+
+              <div class="num">
+                03
+              </div>
+
+              <div>
+
+                <h3>
+                  NRI requirements add complexity
+                </h3>
+
+                <p>
+                  Tax residency, Indian banking relationships and
+                  investment eligibility introduce additional steps
+                  compared with a simpler domestic onboarding flow.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <div class="problem-item">
+
+              <div class="num">
+                04
+              </div>
+
+              <div>
+
+                <h3>
+                  Users need to know where they are
+                </h3>
+
+                <p>
+                  A long onboarding process needs clear progress,
+                  understandable steps and opportunities to review
+                  information before submission.
+                </p>
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         03 — SCOPE
+    ====================================================== -->
+
+    <section class="section-border">
+
+      <div class="container section-grid">
+
+        <div>
+
+          <div class="section-number">
+            03
+          </div>
+
+          <div class="section-label">
+            Product scope
+          </div>
+
+        </div>
+
+
+        <div class="content reveal">
+
+          <h2>
+            Start with a clear
+            investment boundary.
+          </h2>
+
+          <p class="lead">
+            The experience focuses on NRIs investing in Indian mutual
+            funds through their Indian NRE or NRO bank account.
+          </p>
+
+          <p>
+            Direct funding from an overseas or foreign bank account
+            is outside the scope of this product experience.
+          </p>
+
+
+          <div class="data-grid">
+
+
+            <div class="data-card">
+
+              <span class="tag">
+                INCLUDED
+              </span>
+
+              <h3>
+                Indian NRE / NRO account
+              </h3>
+
+              <p>
+                The investment flow supports funding through the
+                user's Indian NRE or NRO banking relationship.
+              </p>
+
+            </div>
+
+
+            <div class="data-card">
+
+              <span class="tag">
+                OUT OF SCOPE
+              </span>
+
+              <h3>
+                Overseas bank funding
+              </h3>
+
+              <p>
+                Direct investment funding from a foreign or overseas
+                bank account is intentionally excluded from the flow.
+              </p>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         04 — ONBOARDING ARCHITECTURE
+    ====================================================== -->
+
+    <section class="section-border">
+
+      <div class="container section-grid">
+
+        <div>
+
+          <div class="section-number">
+            04
+          </div>
+
+          <div class="section-label">
+            Onboarding architecture
+          </div>
+
+        </div>
+
+
+        <div class="content reveal">
+
+          <h2>
+            Breaking one long form
+            into manageable steps.
+          </h2>
+
+          <p class="lead">
+            Instead of asking for everything at once, I structured
+            onboarding as a sequence of smaller tasks.
+          </p>
+
+          <p>
+            Each step has a clear purpose, allowing users to understand
+            what they are completing before moving forward.
+          </p>
+
+
+          <div class="story-grid">
+
+
+            <div class="story-card">
+
+              <span>
+                01
+              </span>
+
+              <h3>
+                Verify
+              </h3>
+
+              <p>
+                Email or mobile verification followed by OTP.
+              </p>
+
+            </div>
+
+
+            <div class="story-card">
+
+              <span>
+                02
+              </span>
+
+              <h3>
+                Secure
+              </h3>
+
+              <p>
+                Create a 6-digit PIN for convenient account access.
+              </p>
+
+            </div>
+
+
+            <div class="story-card">
+
+              <span>
+                03
+              </span>
+
+              <h3>
+                Complete
+              </h3>
+
+              <p>
+                Personal, tax, professional, bank and nominee details.
+              </p>
+
+            </div>
+
+
+          </div>
+
+
+          <div class="showcase">
+
+            <img src="assets/investapp/onboarding-flow.png" alt="Investment App onboarding flow">
+
+            <div class="caption">
+              Onboarding flow — from account verification to investment readiness.
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         05 — ACCOUNT CREATION
+    ====================================================== -->
+
+    <section class="section-border">
+
+      <div class="container section-grid">
+
+        <div>
+
+          <div class="section-number">
+            05
+          </div>
+
+          <div class="section-label">
+            Account creation
+          </div>
+
+        </div>
+
+
+        <div class="content reveal">
+
+          <h2>
+            Keep the first interaction
+            lightweight.
+          </h2>
+
+          <p class="lead">
+            The onboarding experience starts with something familiar:
+            an email address or mobile number.
+          </p>
+
+          <p>
+            Users can also continue with Google, reducing friction for
+            people who prefer using an existing identity.
+          </p>
+
+          <div class="showcase">
+
+            <img src="assets/investapp/login.png" alt="Investment App account creation screen">
+
+            <div class="caption">
+              Account creation — email, mobile or Google.
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         06 — VERIFICATION & PIN
+    ====================================================== -->
+
+    <section class="section-border">
+
+      <div class="container section-grid">
+
+        <div>
+
+          <div class="section-number">
+            06
+          </div>
+
+          <div class="section-label">
+            Verification & security
+          </div>
+
+        </div>
+
+
+        <div class="content reveal">
+
+          <h2>
+            Verify once.
+            Then make returning access easy.
+          </h2>
+
+          <p class="lead">
+            OTP verification establishes the user's identity during
+            onboarding, while a 6-digit PIN provides a simpler way
+            to return to the app.
+          </p>
+
+          <p>
+            Biometrics can provide an additional convenient access
+            method on supported devices. Higher-risk actions can
+            require stronger verification when necessary.
+          </p>
+
+
+          <div class="two-images">
+
+
+            <div class="showcase">
+
+              <img src="assets/investapp/otp.png" alt="OTP verification screen">
+
+              <div class="caption">
+                OTP verification.
+              </div>
+
+            </div>
+
+
+            <div class="showcase">
+
+              <img src="assets/investapp/create-pin.png" alt="Create PIN screen">
+
+              <div class="caption">
+                Create a 6-digit PIN.
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         07 — PERSONAL DETAILS
+    ====================================================== -->
+
+    <section class="section-border">
+
+      <div class="container section-grid">
+
+        <div>
+
+          <div class="section-number">
+            07
+          </div>
+
+          <div class="section-label">
+            Personal details
+          </div>
+
+        </div>
+
+
+        <div class="content reveal">
+
+          <h2>
+            Ask for personal information
+            when it becomes relevant.
+          </h2>
+
+          <p class="lead">
+            Rather than presenting every compliance requirement
+            immediately, the flow introduces information progressively.
+          </p>
+
+          <p>
+            Personal details establish the user's profile before the
+            flow moves into more specialised financial and tax information.
+          </p>
+
+
+          <div class="showcase">
+
+            <img src="assets/investapp/personal-details.png" alt="Personal details screen">
+
+            <div class="caption">
+              Personal information — introduced as a focused onboarding step.
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         08 — TAX RESIDENCY
+    ====================================================== -->
+
+    <section class="section-border">
+
+      <div class="container section-grid">
+
+        <div>
+
+          <div class="section-number">
+            08
+          </div>
+
+          <div class="section-label">
+            Tax residency
+          </div>
+
+        </div>
+
+
+        <div class="content reveal">
+
+          <h2>
+            Make compliance information
+            understandable.
+          </h2>
+
+          <p class="lead">
+            Tax information is important, but the interface shouldn't
+            make users feel like they are completing a legal document.
+          </p>
+
+          <p>
+            The experience breaks tax residency information into
+            understandable questions and provides context where users
+            may need clarification.
+          </p>
+
+
+          <div class="showcase">
+
+            <img src="assets/investapp/tax-details.png" alt="Tax residency details screen">
+
+            <div class="caption">
+              Tax residency — collecting the information required for the investment account.
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         09 — BANK DETAILS
+    ====================================================== -->
+
+    <section class="section-border">
+
+      <div class="container section-grid">
+
+        <div>
+
+          <div class="section-number">
+            09
+          </div>
+
+          <div class="section-label">
+            Bank details
+          </div>
+
+        </div>
+
+
+        <div class="content reveal">
+
+          <h2>
+            Connect the investment
+            account to the right bank.
+          </h2>
+
+          <p class="lead">
+            For the defined product scope, users invest through
+            their Indian NRE or NRO account.
+          </p>
+
+          <p>
+            The bank step therefore focuses on collecting and
+            validating the Indian banking relationship needed
+            for investing.
+          </p>
+
+
+          <div class="showcase">
+
+            <img src="assets/investapp/bank-details.png" alt="Bank details screen">
+
+            <div class="caption">
+              Bank details — setting up the Indian NRE / NRO investment relationship.
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         10 — NOMINEE
+    ====================================================== -->
+
+    <section class="section-border">
+
+      <div class="container section-grid">
+
+        <div>
+
+          <div class="section-number">
+            10
+          </div>
+
+          <div class="section-label">
+            Nominee details
+          </div>
+
+        </div>
+
+
+        <div class="content reveal">
+
+          <h2>
+            Make an important requirement
+            feel simple.
+          </h2>
+
+          <p class="lead">
+            Adding a nominee is an important part of setting up
+            an investment account, but it doesn't need to become
+            a complicated form experience.
+          </p>
+
+          <p>
+            Users can add a nominee, define the relationship and
+            allocation, add another nominee when needed, and ensure
+            the total allocation reaches 100%.
+          </p>
+
+
+          <div class="showcase">
+
+            <img src="assets/investapp/nominee-details.png" alt="Nominee details screen">
+
+            <div class="caption">
+              Nominee details — a structured flow for adding and allocating nominees.
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         11 — REVIEW
+    ====================================================== -->
+
+    <section class="dark-section">
+
+      <div class="container section-grid">
+
+        <div>
+
+          <div class="section-number">
+            11
+          </div>
+
+          <div class="section-label">
+            Review & declaration
+          </div>
+
+        </div>
+
+
+        <div class="content reveal">
+
+          <h2>
+            Give users one final
+            moment of confidence.
+          </h2>
+
+          <p class="lead">
+            Before submitting the application, users should be able
+            to review the information they have provided.
+          </p>
+
+          <p>
+            A final review step reduces uncertainty and gives users
+            an opportunity to catch incorrect information before
+            completing onboarding.
+          </p>
+
+
+          <div class="showcase">
+
+            <img src="assets/investapp/review.png" alt="Investment account review screen">
+
+            <div class="caption">
+              Review & declaration — confirming account information before completion.
+            </div>
+
+          </div>
+
+
+          <div class="insight">
+
+            <div class="insight-label">
+              Design principle
+            </div>
+
+            <p>
+              Reduce uncertainty before asking users to commit.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         12 — DASHBOARD
+    ====================================================== -->
+
+    <section class="section-border">
+
+      <div class="container section-grid">
+
+        <div>
+
+          <div class="section-number">
+            12
+          </div>
+
+          <div class="section-label">
+            The dashboard
+          </div>
+
+        </div>
+
+
+        <div class="content reveal">
+
+          <h2>
+            Onboarding should end
+            with a clear next step.
+          </h2>
+
+          <p class="lead">
+            Completing onboarding shouldn't leave users wondering
+            what happens next.
+          </p>
+
+          <p>
+            The dashboard becomes the starting point for the
+            investment journey, showing account status and helping
+            users understand what they can do next.
+          </p>
+
+
+          <div class="showcase">
+
+            <img src="assets/investapp/dashboard.png" alt="Investment App dashboard">
+
+            <div class="caption">
+              Dashboard — the starting point after onboarding.
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         13 — DESIGN DECISIONS
+    ====================================================== -->
+
+    <section class="section-border">
+
+      <div class="container section-grid">
+
+        <div>
+
+          <div class="section-number">
+            13
+          </div>
+
+          <div class="section-label">
+            Design decisions
+          </div>
+
+        </div>
+
+
+        <div class="content reveal">
+
+          <h2>
+            Designing for clarity
+            at every step.
+          </h2>
+
+
+          <div class="decision-list">
+
+
+            <div class="decision">
+
+              <div>
+                <h3>
+                  Progressive disclosure
+                </h3>
+              </div>
+
+              <div>
+                <p>
+                  Instead of exposing every requirement at once,
+                  information is introduced step by step so users
+                  can focus on the task immediately in front of them.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div class="decision">
+
+              <div>
+                <h3>
+                  Clear progress
+                </h3>
+              </div>
+
+              <div>
+                <p>
+                  Breaking onboarding into meaningful stages helps
+                  users understand how much they have completed and
+                  what remains.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div class="decision">
+
+              <div>
+                <h3>
+                  Explain before asking
+                </h3>
+              </div>
+
+              <div>
+                <p>
+                  Financial and compliance-related questions should
+                  provide enough context for users to understand why
+                  the information is required.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div class="decision">
+
+              <div>
+                <h3>
+                  Review before commitment
+                </h3>
+              </div>
+
+              <div>
+                <p>
+                  A dedicated review stage gives users confidence
+                  that their information is correct before completing
+                  the account setup.
+                </p>
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         14 — OUTCOME
+    ====================================================== -->
+
+    <section class="section-border">
+
+      <div class="container section-grid">
+
+        <div>
+
+          <div class="section-number">
+            14
+          </div>
+
+          <div class="section-label">
+            The outcome
+          </div>
+
+        </div>
+
+
+        <div class="content reveal">
+
+          <h2>
+            A complicated setup became
+            a guided journey.
+          </h2>
+
+          <p class="lead">
+            The final experience turns a large collection of
+            onboarding requirements into a sequence users can
+            understand and complete.
+          </p>
+
+
+          <div class="outcome-grid">
+
+
+            <div class="outcome-card flex-column">
+
+              <h3>
+                Understand
+              </h3>
+
+              <p>
+                Users know what information is being requested
+                and why it matters.
+              </p>
+
+            </div>
+
+
+            <div class="outcome-card flex-column">
+
+              <h3>
+                Complete
+              </h3>
+
+              <p>
+                Long forms are broken into focused steps that
+                are easier to work through.
+              </p>
+
+            </div>
+
+
+            <div class="outcome-card flex-column">
+
+              <h3>
+                Invest
+              </h3>
+
+              <p>
+                The completed onboarding leads naturally into
+                the investment experience.
+              </p>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         15 — WHAT I LEARNED
+    ====================================================== -->
+
+    <section class="section-border">
+
+      <div class="container section-grid">
+
+        <div>
+
+          <div class="section-number">
+            15
+          </div>
+
+          <div class="section-label">
+            What I learned
+          </div>
+
+        </div>
+
+
+        <div class="content reflection reveal">
+
+          <h2>
+            Good fintech UX is about
+            reducing uncertainty.
+          </h2>
+
+          <p>
+            Financial products often require users to provide a
+            significant amount of information before they can
+            reach the value of the product.
+          </p>
+
+          <p>
+            The designer's role is not to remove those requirements
+            when they are necessary. It is to make the journey through
+            them feel understandable and manageable.
+          </p>
+
+
+          <div class="insight">
+
+            <p>
+              When the process is complex, clarity becomes part
+              of the product itself.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         NEXT PROJECT
+    ====================================================== -->
+
+    <section class="next-project">
+
+      <div class="container next-project-inner">
+
+        <div>
+
+          <span class="eyebrow">
+            Next case study
+          </span>
+
+          <h2>
+            Ranger Policy Editor
+          </h2>
+
+        </div>
+
+
+        <a href="ranger.html" class="next-link">
+          View case study →
+        </a>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- =====================================================
+       SHARED CONTACT
+       Injected by js/components.js
+  ====================================================== -->
+
+  <div id="site-contact"></div>
+
+
+  <!-- =====================================================
+       SHARED FOOTER
+       Injected by js/components.js
+  ====================================================== -->
+
+  <div id="site-footer"></div>
+
+
+  <!-- =====================================================
+       SHARED COMPONENTS
+  ====================================================== -->
+
+  <script src="js/components.js"></script>
+
+
+  <!-- =====================================================
+       PAGE JAVASCRIPT
+  ====================================================== -->
+
+  <script>
+
+    /* -----------------------------------------
+       Reveal on scroll
+    ----------------------------------------- */
+
+    const revealElements =
+      document.querySelectorAll(".reveal");
+
+    const observer =
+      new IntersectionObserver(
+        (entries) => {
+
+          entries.forEach((entry) => {
+
+            if (entry.isIntersecting) {
+
+              entry.target.classList.add("visible");
+
+              observer.unobserve(entry.target);
+
+            }
+
+          });
+
+        },
+        {
+          threshold: 0.12
+        }
+      );
+
+
+    revealElements.forEach((element) => {
+      observer.observe(element);
+    });
+
+  </script>
+
+
+</body>
+
+</html>

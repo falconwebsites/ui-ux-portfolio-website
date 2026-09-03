@@ -1,0 +1,78 @@
+UI/UX PORTFOLIO — MASTER DESIGN DIRECTION
+
+Visual style:
+Modern, minimal, premium, editorial and sophisticated.
+The portfolio should feel like a senior product/UI/UX designer's
+portfolio — professional and trustworthy, but not corporate or boring.
+
+Overall aesthetic:
+- Lots of whitespace
+- Strong typography
+- Large editorial headlines
+- Minimal decoration
+- Large project visuals
+- Clean grids
+- Subtle interactions
+- Quiet/confident visual language
+- Let the work be the hero
+
+Typography:
+- Manrope for large headlines and project titles
+- DM Sans for body copy, navigation and UI labels
+- Headlines should be large, bold/medium weight and tightly tracked
+- Body copy should remain clean and readable
+
+Colours:
+- Background: #F7F7F5
+- Primary text: #171717
+- Secondary text: #707070
+- Borders: #DEDED9
+- Dark sections: #171717
+- White text on dark sections
+- Restrained green only for availability/status indicators
+
+UI:
+- Thin 1px borders
+- Small uppercase eyebrow labels
+- Rounded pill tags
+- Minimal CTA buttons
+- Arrow motifs: ↗ and ↓
+- Subtle hover animations
+- Subtle scroll-reveal animations
+- Avoid excessive shadows
+- Avoid excessive gradients
+- Avoid unnecessary decorative elements
+
+Layout:
+- Wide centred content container
+- Generous vertical spacing
+- Editorial layouts
+- Asymmetric grids where appropriate
+- Large project images
+- Strong visual hierarchy
+- Responsive/mobile-first behaviour
+
+Homepage structure:
+1. Hero
+2. Selected Work
+3. Weekend Experiments
+4. Life Outside Work
+5. Testimonials
+6. Start a Conversation / Contact
+7. Footer
+
+Selected Work:
+Each project gets its own detailed case-study page.
+
+Case-study direction:
+The case studies should feel like an extension of the same portfolio,
+not completely separate websites.
+
+Weekend Experiments:
+Shorter, more visual project pages.
+These can be slightly more playful/experimental while still using
+the same typography, spacing, colours and interaction language.
+
+Important:
+Do NOT introduce a completely different visual style on new pages.
+Maintain consistency across the entire portfolio.
