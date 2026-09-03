@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,15 +5,9 @@
 
   <meta charset="UTF-8">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta
-    name="description"
-    content="Ranger Policy Editor — UX case study by Swapnil Jadhav."
-  >
+  <meta name="description" content="Ranger Policy Editor — UX case study by Swapnil Jadhav.">
 
   <title>Ranger Policy Editor — Swapnil Jadhav</title>
 
@@ -23,31 +16,20 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  >
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  >
+    rel="stylesheet">
 
 
   <!-- Main portfolio styles -->
 
-  <link
-    rel="stylesheet"
-    href="css/style.css"
-  >
+  <link rel="stylesheet" href="css/style.css">
 
   <!-- Shared case study styles -->
 
-  <link
-    rel="stylesheet"
-    href="css/case-study.css"
-  >
+  <link rel="stylesheet" href="css/case-study.css">
 
 </head>
 
@@ -157,10 +139,7 @@
 
         <figure class="hero-image reveal">
 
-          <img
-            src="images/ranger/ranger-hero.png"
-            alt="Ranger Policy Editor interface"
-          >
+          <img src="images/ranger/ranger-hero.png" alt="Ranger Policy Editor interface">
 
         </figure>
 
@@ -170,9 +149,8 @@
     </section>
 
 
-
     <!-- =====================================================
-         CHALLENGE
+         about the product
     ===================================================== -->
 
     <section class="section-border">
@@ -187,6 +165,61 @@
           </div>
 
           <div class="section-label">
+            About the product
+          </div>
+
+        </div>
+
+
+        <div class="content reveal">
+
+          <h2>
+
+            Apache Ranger
+
+          </h2>
+
+
+
+
+          <p>
+
+            Apache Ranger is an open-source security framework for managing and monitoring access to data across
+            enterprise platforms.
+
+          </p>
+
+          <p>
+            It lets administrators define who can access which resources, what actions they can perform, and under what
+            conditions through access policies.
+          </p>
+
+
+
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =====================================================
+         CHALLENGE
+    ===================================================== -->
+
+    <section class="section-border">
+
+      <div class="container section-grid">
+
+
+        <div>
+
+          <div class="section-number">
+            02
+          </div>
+
+          <div class="section-label">
             The challenge
           </div>
 
@@ -197,27 +230,26 @@
 
           <h2>
 
-            The interface was powerful.
-            The experience made users work too hard.
-
+            Making a powerful policy editor easier to use.
           </h2>
 
 
-          <p class="lead">
 
-            Ranger gives administrators fine-grained control over
-            access to data and services. But creating a policy involves
-            many decisions, fields and dependencies.
 
-          </p>
 
 
           <p>
 
-            The challenge wasn't simply to make the UI look better.
-            It was to make the underlying task easier to understand
-            without removing the flexibility enterprise users need.
+            Ranger’s Policy Editor was powerful, but creating a policy was harder than it needed to be. Security
+            administrators had to work through a dense form with multiple sections, fields, permissions, and
+            configurations.
 
+          </p>
+          <p>
+
+
+            This made a task that administrators performed regularly feel slow, complex, and unnecessarily difficult to
+            manage.
           </p>
 
 
@@ -229,8 +261,8 @@
 
             <p>
 
-              How might we make policy creation easier to understand
-              without hiding the complexity users need to control?
+              The challenge was to simplify the experience without taking away the flexibility and control enterprise
+              users needed.
 
             </p>
 
@@ -257,7 +289,7 @@
         <div>
 
           <div class="section-number">
-            02
+            03
           </div>
 
           <div class="section-label">
@@ -358,7 +390,7 @@
               </span>
 
               <h3>
-                What did design need to solve?
+                What needs to change?
               </h3>
 
               <p>
@@ -433,11 +465,11 @@
                 01
               </span>
 
-              <h3>
+              <h3 style="color: var(--dark);">
                 Understand
               </h3>
 
-              <p>
+              <p style="color: var(--text)">
 
                 Understand the existing policy creation journey and
                 terminology used by the product.
@@ -453,11 +485,11 @@
                 02
               </span>
 
-              <h3>
+              <h3 style="color: var(--dark);">
                 Structure
               </h3>
 
-              <p>
+              <p style="color: var(--text)">
 
                 Break the task into logical groups rather than presenting
                 everything as one large form.
@@ -473,11 +505,11 @@
                 03
               </span>
 
-              <h3>
+              <h3 style="color: var(--dark);">
                 Design
               </h3>
 
-              <p>
+              <p style="color: var(--text)">
 
                 Create a clearer interaction model that makes each
                 decision easier to understand.
@@ -493,11 +525,11 @@
                 04
               </span>
 
-              <h3>
+              <h3 style="color: var(--dark);">
                 Validate
               </h3>
 
-              <p>
+              <p style="color: var(--text)">
 
                 Review the solution with stakeholders and iterate
                 based on feedback and technical constraints.
@@ -553,28 +585,28 @@
 
           <p class="lead">
 
-            The original experience put many choices in front of
-            the user at once. That meant users had to figure out
-            which fields belonged together and what to do next.
+            The original experience presented all the fields together as one long form.
 
           </p>
 
 
           <p>
 
-            I reorganised the flow around the questions users need
-            to answer: what is this policy, who does it apply to,
-            what does it protect, and what access should be allowed?
+            I reorganised them into logical groups based on how a policy is actually created — starting with service,
+            security zone, and access type, followed by the resources that need to be secured and then the other policy
+            settings.
 
+          </p>
+
+          <p>
+            This kept related decisions together and gave the configuration a more natural sequence.
           </p>
 
 
           <figure class="showcase reveal">
 
-            <img
-              src="images/ranger/ranger-information-architecture.png"
-              alt="Ranger policy editor information architecture"
-            >
+            <img src="images/ranger/ranger-information-architecture.png"
+              alt="Ranger policy editor information architecture">
 
             <figcaption class="caption">
 
@@ -625,13 +657,7 @@
           </h2>
 
 
-          <p class="decision-quote">
 
-            The goal wasn't to hide complexity.
-            It was to introduce complexity at the moment
-            the user actually needed it.
-
-          </p>
 
 
           <div class="two-column">
@@ -640,7 +666,8 @@
             <div>
 
               <p>
-
+                I first explored keeping the policy on a single page, reorganising the content into clearer groups.
+                While this improved structure, users still had too much to process at once.
                 A single long form gave users visibility into everything
                 at once, but that visibility came at the cost of focus.
 
@@ -649,35 +676,25 @@
 
               <p>
 
-                I explored a step-based approach so users could concentrate
-                on one category of decision at a time while still
-                understanding where they were in the overall policy
-                creation journey.
+                I then explored a step-based approach, where users could focus on one category of decision at a time
+                while still understanding where they were in the overall policy creation journey.
 
               </p>
+
+              <p>
+                Within these steps, I also looked at how much configuration needed to be visible at once. Where
+                additional configuration was needed, sections such as Resources, Permissions, and Conditions offered an
+                “Advanced settings” option. Users could expand these controls when needed, while the essential
+                configuration remained visible by default. </p>
+              </p>
+
+              <p>This was less about making the interface feel simpler and more about making the user's mental workload
+                manageable.</p>
 
             </div>
 
 
-            <div>
 
-              <p>
-
-                The stepper also created a useful framework for validation.
-                Each stage could communicate what information was required
-                before moving forward.
-
-              </p>
-
-
-              <p>
-
-                This was less about making the interface feel simpler
-                and more about making the user's mental workload manageable.
-
-              </p>
-
-            </div>
 
 
           </div>
@@ -691,239 +708,14 @@
 
 
 
-    <!-- =====================================================
-         06 / EXPLORATION
-    ===================================================== -->
-
-    <section class="section-border">
-
-
-      <div class="container section-grid">
-
-
-        <div>
-
-          <div class="section-number">
-            06
-          </div>
-
-          <div class="section-label">
-            Exploration
-          </div>
-
-        </div>
-
-
-        <div class="content reveal">
-
-
-          <h2>
-
-            I explored before
-            I committed.
-
-          </h2>
-
-
-          <p class="lead">
-
-            The final interaction was the result of comparing
-            different ways of structuring the same complex task.
-
-          </p>
-
-
-
-          <!-- DIRECTION 01 -->
-
-          <div class="exploration-row">
-
-
-            <div class="exploration-copy">
-
-
-              <span>
-                Direction 01
-              </span>
-
-
-              <h3>
-                Keep everything visible.
-              </h3>
-
-
-              <p>
-
-                I first explored keeping the policy on one page,
-                but reorganising the content into clearer groups.
-
-              </p>
-
-
-              <div class="tradeoff-grid">
-
-
-                <div class="tradeoff-item">
-
-                  <strong>
-                    What worked
-                  </strong>
-
-                  <p>
-
-                    Users could see the whole policy at once.
-
-                  </p>
-
-                </div>
-
-
-                <div class="tradeoff-item">
-
-                  <strong>
-                    What didn't
-                  </strong>
-
-                  <p>
-
-                    There was still too much to process at the same time.
-
-                  </p>
-
-                </div>
-
-
-              </div>
-
-
-            </div>
-
-
-            <figure class="showcase">
-
-
-              <img
-                src="images/ranger/ranger-exploration-01.png"
-                alt="Early Ranger policy editor exploration"
-              >
-
-
-              <figcaption class="caption">
-
-                Early exploration of a single-page approach.
-
-              </figcaption>
-
-
-            </figure>
-
-
-          </div>
-
-
-
-          <!-- DIRECTION 02 -->
-
-          <div class="exploration-row reverse">
-
-
-            <div class="exploration-copy">
-
-
-              <span>
-                Direction 02
-              </span>
-
-
-              <h3>
-                Guide the user through the task.
-              </h3>
-
-
-              <p>
-
-                I then explored breaking the task into a few clear stages,
-                so users could focus on one decision at a time.
-
-              </p>
-
-
-              <div class="tradeoff-grid">
-
-
-                <div class="tradeoff-item">
-
-                  <strong>
-                    What worked
-                  </strong>
-
-                  <p>
-
-                    Each stage had a clear purpose and felt easier
-                    to work through.
-
-                  </p>
-
-                </div>
-
-
-                <div class="tradeoff-item">
-
-                  <strong>
-                    What to solve
-                  </strong>
-
-                  <p>
-
-                    The flow needed clear progress and navigation
-                    so users never felt lost.
-
-                  </p>
-
-                </div>
-
-
-              </div>
-
-
-            </div>
-
-
-            <figure class="showcase">
-
-
-              <img
-                src="images/ranger/ranger-exploration-02.png"
-                alt="Ranger policy editor multi-step exploration"
-              >
-
-
-              <figcaption class="caption">
-
-                Exploring a guided multi-step policy creation flow.
-
-              </figcaption>
-
-
-            </figure>
-
-
-          </div>
-
-
-        </div>
-
-      </div>
-
-    </section>
 
 
 
     <!-- =====================================================
-         07 / SOLUTION
+         06 / SOLUTION
     ===================================================== -->
 
-    <section class="case-final">
+    <section class="case-final dark-section">
 
 
       <div class="container">
@@ -935,7 +727,7 @@
           <div>
 
             <div class="section-number">
-              07
+              06
             </div>
 
             <div class="section-label">
@@ -964,7 +756,7 @@
 
             </p>
 
-            
+
             <!-- STEP 01 -->
 
             <div class="screen-block">
@@ -977,7 +769,7 @@
                 </span>
 
                 <h3>
-                  Define the policy
+                  Define the Service
                 </h3>
 
               </div>
@@ -993,10 +785,7 @@
 
               <figure class="case-image reveal">
 
-                <img
-                  src="images/ranger/ranger-step-01.png"
-                  alt="Ranger policy editor first step"
-                >
+                <img src="images/ranger/ranger-step-01.png" alt="Ranger policy editor first step">
 
                 <figcaption>
 
@@ -1023,7 +812,7 @@
                 </span>
 
                 <h3>
-                  Define access
+                  Define resources
                 </h3>
 
               </div>
@@ -1040,10 +829,7 @@
 
               <figure class="case-image reveal">
 
-                <img
-                  src="images/ranger/ranger-step-02.png"
-                  alt="Ranger policy editor access configuration"
-                >
+                <img src="images/ranger/ranger-step-02.png" alt="Ranger policy editor access configuration">
 
                 <figcaption>
 
@@ -1087,10 +873,7 @@
 
               <figure class="case-image reveal">
 
-                <img
-                  src="images/ranger/ranger-step-03.png"
-                  alt="Ranger policy editor permissions"
-                >
+                <img src="images/ranger/ranger-step-03.png" alt="Ranger policy editor permissions">
 
                 <figcaption>
 
@@ -1134,10 +917,7 @@
 
               <figure class="case-image reveal">
 
-                <img
-                  src="images/ranger/ranger-step-04.png"
-                  alt="Ranger policy editor review step"
-                >
+                <img src="images/ranger/ranger-step-04.png" alt="Ranger policy editor review step">
 
                 <figcaption>
 
@@ -1167,7 +947,7 @@
 
 
     <!-- =====================================================
-         08 / COLLABORATION
+         07 / COLLABORATION
     ===================================================== -->
 
     <section class="section-border">
@@ -1179,7 +959,7 @@
         <div>
 
           <div class="section-number">
-            08
+            07
           </div>
 
           <div class="section-label">
@@ -1337,7 +1117,7 @@
 
 
     <!-- =====================================================
-         09 / ITERATION
+         08 / ITERATION
     ===================================================== -->
 
     <section class="section-border">
@@ -1349,7 +1129,7 @@
         <div>
 
           <div class="section-number">
-            09
+            08
           </div>
 
           <div class="section-label">
@@ -1384,10 +1164,7 @@
 
             <figure class="case-image reveal">
 
-              <img
-                src="images/ranger/ranger-before.png"
-                alt="Earlier Ranger policy editor design"
-              >
+              <img src="images/ranger/ranger-before.png" alt="Earlier Ranger policy editor design">
 
               <figcaption>
 
@@ -1400,10 +1177,7 @@
 
             <figure class="case-image reveal">
 
-              <img
-                src="images/ranger/ranger-after.png"
-                alt="Refined Ranger policy editor design"
-              >
+              <img src="images/ranger/ranger-after.png" alt="Refined Ranger policy editor design">
 
               <figcaption>
 
@@ -1426,7 +1200,7 @@
 
 
     <!-- =====================================================
-         10 / OUTCOME
+         9 / OUTCOME
     ===================================================== -->
 
     <section class="case-outcome">
@@ -1436,7 +1210,7 @@
 
 
         <span class="eyebrow">
-          10 / Outcome
+          09 / Outcome
         </span>
 
 
@@ -1544,7 +1318,7 @@
 
 
     <!-- =====================================================
-         11 / LEARNINGS
+         10 / LEARNINGS
     ===================================================== -->
 
     <section class="section-border">
@@ -1556,7 +1330,7 @@
         <div>
 
           <div class="section-number">
-            11
+            10
           </div>
 
           <div class="section-label">
@@ -1763,10 +1537,7 @@
         </div>
 
 
-        <a
-          href="investment-onboarding.html"
-          class="next-link"
-        >
+        <a href="investment-onboarding.html" class="next-link">
 
           SBI Mutual Fund ↗
 
@@ -1867,4 +1638,3 @@
 </body>
 
 </html>
-
