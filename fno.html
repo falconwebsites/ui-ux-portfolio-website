@@ -1,21 +1,15 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 
   <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>F&O Trading Platform — UX Case Study | Swapnil Jadhav</title>
 
-  <meta
-    name="description"
-    content="UX case study by Swapnil Jadhav — designing a clearer way to understand Futures & Options market data."
-  />
+  <meta name="description"
+    content="UX case study by Swapnil Jadhav — designing a clearer way to understand Futures & Options market data." />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,8 +17,7 @@
 
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  >
+    rel="stylesheet">
 
   <!-- Shared portfolio CSS -->
   <link rel="stylesheet" href="css/style.css">
@@ -50,10 +43,7 @@
         SJ<span>.</span>
       </a>
 
-      <nav
-        class="main-nav"
-        aria-label="Main navigation"
-      >
+      <nav class="main-nav" aria-label="Main navigation">
 
         <a href="index.html#work">
           Work
@@ -73,19 +63,12 @@
 
       </nav>
 
-      <a
-        href="index.html#contact"
-        class="nav-cta"
-      >
+      <a href="index.html#contact" class="nav-cta">
         Let's talk
         <span>↗</span>
       </a>
 
-      <button
-        class="menu-toggle"
-        type="button"
-        aria-label="Open navigation menu"
-      >
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu">
         <span></span>
         <span></span>
       </button>
@@ -119,9 +102,7 @@
         </h1>
 
         <p class="hero-intro">
-          An F&O trading platform designed to help traders make sense of
-          Open Interest, OI changes, price movement and market strength
-          without having to decode multiple screens of data.
+          An F&O market analysis experience focused on making market data easier to explore and interpret.
         </p>
 
 
@@ -223,28 +204,24 @@
         <div class="content reveal">
 
           <h2>
-            The data wasn't the problem.
-            Understanding it was.
-          </h2>
-
-
-          <p class="lead">
-            Futures & Options markets generate a huge amount of information.
-            Open Interest, Change in OI, LTP, strike prices, Call and Put
-            activity — all of it can be useful.
-          </p>
+            Bringing the trader's workflow onto one screen </h2>
 
 
           <p>
-            The challenge is that the information usually lives in separate
-            tables, charts and indicators. A trader has to move between
-            different pieces of data and mentally connect the dots.
+            The client was an F&O trader who studied options data, noted important values in his book, tracked changes
+            between today and the previous day, and performed calculations to understand market activity.
           </p>
-
 
           <p>
-            I wanted to explore a simpler question:
+            The idea was to bring this workflow into a single interface, keeping the data, historical context and
+            calculations together on screen.
           </p>
+          <p>
+            This would make the process faster and more consistent, reducing manual calculations, the chance of
+            mistakes, and the frustration of keeping track of everything in a notebook.
+          </p>
+
+
 
 
           <div class="insight">
@@ -254,9 +231,7 @@
             </div>
 
             <p>
-              How might we turn a large amount of options data into a
-              clearer picture of what is happening in the market?
-            </p>
+              How might we turn all of this data into a clear view of the market? </p>
 
           </div>
 
@@ -292,113 +267,24 @@
         <div class="content reveal">
 
           <h2>
-            Traders don't need more numbers.
-            They need context.
+            Making relationships within the data easier to see
           </h2>
 
 
-          <p class="lead">
-            The product had to expose the underlying data without making
-            users feel like they were looking at a spreadsheet.
+          <p>
+            The interface brought together a large amount of options data across strikes, CE/PE activity, Open Interest,
+            price movement and OI changes. The challenge was presenting all of this without making the information
+            difficult to scan and interpret.
+          </p>
+          <p>
+            The useful context often came from the relationship between values — how CE and PE activity compared, how OI
+            moved with price, and where significant changes were happening. With so many values changing across multiple
+            strikes, users needed to quickly see these relationships without having to mentally connect data from
+            different parts of the interface.
           </p>
 
 
-          <div class="problem-list">
 
-
-            <div class="problem-item">
-
-              <div class="num">
-                01
-              </div>
-
-              <div>
-
-                <h3>
-                  Too much information
-                </h3>
-
-                <p>
-                  OI, Change in OI, LTP and other values are useful
-                  individually, but become difficult to interpret when
-                  presented together without hierarchy.
-                </p>
-
-              </div>
-
-            </div>
-
-
-            <div class="problem-item">
-
-              <div class="num">
-                02
-              </div>
-
-              <div>
-
-                <h3>
-                  Call and Put data need to be read together
-                </h3>
-
-                <p>
-                  Looking at only one side of the options chain doesn't
-                  provide the complete picture. The interface needed to
-                  make the relationship between CE and PE activity obvious.
-                </p>
-
-              </div>
-
-            </div>
-
-
-            <div class="problem-item">
-
-              <div class="num">
-                03
-              </div>
-
-              <div>
-
-                <h3>
-                  Changes matter as much as the current value
-                </h3>
-
-                <p>
-                  A large Open Interest number tells one story. A large
-                  change in Open Interest can tell another. The UI needed
-                  to distinguish these signals clearly.
-                </p>
-
-              </div>
-
-            </div>
-
-
-            <div class="problem-item">
-
-              <div class="num">
-                04
-              </div>
-
-              <div>
-
-                <h3>
-                  Users shouldn't have to decode the interface
-                </h3>
-
-                <p>
-                  The goal was not to hide the underlying market data.
-                  It was to organize it so that important relationships
-                  could be understood faster.
-                </p>
-
-              </div>
-
-            </div>
-
-
-          </div>
 
         </div>
 
@@ -432,99 +318,30 @@
         <div class="content reveal">
 
           <h2>
-            Before designing the screens,
-            I had to understand the signals.
+            Before designing the screens, I had to get familiar with F&O
           </h2>
 
 
-          <p class="lead">
-            The first part of the design work was understanding what each
-            piece of data was actually telling the user.
+          <p>
+            I started with the basics — understanding options, strike prices, Calls and Puts, Open Interest, and how
+            price and OI changes relate to each other.
           </p>
+
+
 
 
           <p>
-            Instead of treating every number equally, I grouped the
-            information around the questions a trader would naturally ask:
+            I then worked through the relationships between price and OI changes to understand the different market
+            indicators — Long Buildup, Short Buildup, Long Unwinding and Short Covering. I also looked at how market
+            strength could be derived from these movements.
+          </p>
+
+          <p>
+            This helped me understand what the data was showing and how traders use it to study market activity, giving
+            me the foundation to design the experience.
           </p>
 
 
-          <div class="data-grid">
-
-
-            <div class="data-card">
-
-              <span class="tag">
-                OI
-              </span>
-
-              <h3>
-                Where is the open interest?
-              </h3>
-
-              <p>
-                Shows where positions are concentrated across different
-                strike prices.
-              </p>
-
-            </div>
-
-
-            <div class="data-card">
-
-              <span class="tag">
-                CHANGE IN OI
-              </span>
-
-              <h3>
-                What is changing?
-              </h3>
-
-              <p>
-                Highlights where new positions are being added or existing
-                positions are being reduced.
-              </p>
-
-            </div>
-
-
-            <div class="data-card">
-
-              <span class="tag">
-                PRICE
-              </span>
-
-              <h3>
-                What is price doing?
-              </h3>
-
-              <p>
-                Price movement adds another dimension to the interpretation
-                of Open Interest activity.
-              </p>
-
-            </div>
-
-
-            <div class="data-card">
-
-              <span class="tag">
-                CE / PE
-              </span>
-
-              <h3>
-                Which side is more active?
-              </h3>
-
-              <p>
-                Call and Put activity needs to be viewed together rather
-                than as isolated numbers.
-              </p>
-
-            </div>
-
-
-          </div>
 
         </div>
 
@@ -558,22 +375,18 @@
         <div class="content reveal">
 
           <h2>
-            I structured the experience
-            around decisions, not data.
+            I structured the experience to make the data easier to explore.
           </h2>
 
 
-          <p class="lead">
-            Instead of starting with a giant options chain, I broke the
-            experience into layers.
-          </p>
-
-
           <p>
-            The most important information should be visible first.
-            Detailed numbers could then support the user's understanding
-            when they wanted to go deeper.
+            The experience was built around a continuous feed of live market data received from Sharekhan through a
+            socket connection. I organised this data into layers so the most important information appeared first, while
+            the underlying options-chain data remained available for deeper investigation.
           </p>
+
+
+
 
 
           <div class="story-grid">
@@ -590,8 +403,7 @@
               </h3>
 
               <p>
-                Start with the broader market picture before diving into
-                individual strikes.
+                Start with the broader market picture before looking at individual strikes.
               </p>
 
             </div>
@@ -604,11 +416,11 @@
               </span>
 
               <h3>
-                Strike-level activity
+                Market activity
               </h3>
 
               <p>
-                Compare CE and PE activity around relevant strike prices.
+                OI Summary and Strength Summary help interpret the relationships between OI, price, CE and PE activity.
               </p>
 
             </div>
@@ -621,13 +433,11 @@
               </span>
 
               <h3>
-                Detailed data
+                Enriched market data
               </h3>
 
               <p>
-                Give users the underlying numbers when they need to verify
-                or investigate a signal.
-              </p>
+                The options-chain data was extended with additional calculated values and indicators. </p>
 
             </div>
 
@@ -641,8 +451,11 @@
     </section>
 
 
+
+
+
     <!-- =====================================================
-         05 — THE OPTIONS CHAIN
+         05 — TOP 6
     ====================================================== -->
 
     <section class="case-study-section section-border">
@@ -657,73 +470,6 @@
           </div>
 
           <div class="section-label">
-            The options chain
-          </div>
-
-        </div>
-
-
-        <div class="content reveal">
-
-          <h2>
-            One table.
-            Multiple layers of information.
-          </h2>
-
-
-          <p class="lead">
-            The options chain is where a large amount of information comes
-            together, so hierarchy became especially important here.
-          </p>
-
-
-          <p>
-            I separated the Call and Put sides visually while keeping the
-            Strike Price as the central reference point.
-          </p>
-
-
-          <p>
-            This lets the user scan horizontally to compare the two sides
-            and vertically to understand activity across strikes.
-          </p>
-
-
-          <div class="showcase">
-
-            <div class="image-placeholder">
-              OPTIONS CHAIN SCREENSHOT
-            </div>
-
-            <div class="caption">
-              Options chain — CE and PE activity organized around strike price.
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         06 — TOP 6
-    ====================================================== -->
-
-    <section class="case-study-section section-border">
-
-      <div class="container section-grid">
-
-
-        <div class="section-aside">
-
-          <div class="section-number">
-            06
-          </div>
-
-          <div class="section-label">
             Reducing the noise
           </div>
 
@@ -733,8 +479,7 @@
         <div class="content reveal">
 
           <h2>
-            Not every strike deserves
-            equal attention.
+            Making dense information easier to scan.
           </h2>
 
 
@@ -751,11 +496,15 @@
 
 
           <p>
-            The Top 6 view surfaces the strongest current Open Interest
-            concentrations while keeping the underlying options chain
-            available for deeper analysis.
+            The Top 6 view surfaces the strongest current Open Interest concentrations, while the extended options chain
+            remains available for deeper analysis.
           </p>
 
+          <p>
+            Related values were grouped into a single cell, using hierarchy and spacing to distinguish the primary value
+            from supporting information. This allowed more information to be visible without spreading related data
+            across separate columns or areas.
+          </p>
 
           <div class="showcase">
 
@@ -777,7 +526,7 @@
 
 
     <!-- =====================================================
-         07 — STRENGTH SUMMARY
+         06 — STRENGTH SUMMARY
     ====================================================== -->
 
     <section class="case-study-section dark-section">
@@ -788,7 +537,7 @@
         <div class="section-aside">
 
           <div class="section-number">
-            07
+            06
           </div>
 
           <div class="section-label">
@@ -845,7 +594,7 @@
             </div>
 
             <p>
-              Don't replace the data. Give the data hierarchy.
+              Simplify interpretation without hiding the underlying data.
             </p>
 
           </div>
@@ -857,8 +606,11 @@
     </section>
 
 
+
+
+
     <!-- =====================================================
-         08 — VISUAL LANGUAGE
+         07 — OUTCOME
     ====================================================== -->
 
     <section class="case-study-section section-border">
@@ -869,273 +621,7 @@
         <div class="section-aside">
 
           <div class="section-number">
-            08
-          </div>
-
-          <div class="section-label">
-            Visual language
-          </div>
-
-        </div>
-
-
-        <div class="content reveal">
-
-          <h2>
-            The interface needed
-            to feel analytical, not overwhelming.
-          </h2>
-
-
-          <p class="lead">
-            Since the product deals with financial information, visual
-            hierarchy had to communicate meaning without creating noise.
-          </p>
-
-
-          <div class="decision-list">
-
-
-            <div class="decision">
-
-              <h3>
-                Clear hierarchy
-              </h3>
-
-              <p>
-                Important numbers, strike prices and summary indicators
-                receive stronger visual weight. Supporting information
-                remains quieter.
-              </p>
-
-            </div>
-
-
-            <div class="decision">
-
-              <h3>
-                CE / PE separation
-              </h3>
-
-              <p>
-                Calls and Puts are visually separated so users can quickly
-                understand which side they are looking at while still
-                comparing both sides in the same context.
-              </p>
-
-            </div>
-
-
-            <div class="decision">
-
-              <h3>
-                Progressive disclosure
-              </h3>
-
-              <p>
-                The interface surfaces the most useful summary first and
-                keeps deeper numerical information available underneath.
-              </p>
-
-            </div>
-
-
-            <div class="decision">
-
-              <h3>
-                Minimal decoration
-              </h3>
-
-              <p>
-                The visual design stays restrained because the data itself
-                is already visually dense. Decoration should never compete
-                with the information.
-              </p>
-
-            </div>
-
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         09 — DESIGN SYSTEM
-    ====================================================== -->
-
-    <section class="case-study-section section-border">
-
-      <div class="container section-grid">
-
-
-        <div class="section-aside">
-
-          <div class="section-number">
-            09
-          </div>
-
-          <div class="section-label">
-            Design system
-          </div>
-
-        </div>
-
-
-        <div class="content reveal">
-
-          <h2>
-            A system that could
-            scale beyond one screen.
-          </h2>
-
-
-          <p class="lead">
-            The product contains many data-heavy views, so consistency was
-            critical.
-          </p>
-
-
-          <p>
-            I created reusable patterns for tables, cards, indicators,
-            strike prices, summary states and data visualisation so that
-            new screens could be added without reinventing the interface.
-          </p>
-
-
-          <div class="two-images">
-
-
-            <div class="showcase">
-
-              <div class="image-placeholder">
-                UI COMPONENTS
-              </div>
-
-            </div>
-
-
-            <div class="showcase">
-
-              <div class="image-placeholder">
-                DESIGN SYSTEM
-              </div>
-
-            </div>
-
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         10 — KEY SCREENS
-    ====================================================== -->
-
-    <section class="case-study-section section-border">
-
-      <div class="container section-grid">
-
-
-        <div class="section-aside">
-
-          <div class="section-number">
-            10
-          </div>
-
-          <div class="section-label">
-            Key screens
-          </div>
-
-        </div>
-
-
-        <div class="content reveal">
-
-          <h2>
-            Bringing the pieces together.
-          </h2>
-
-
-          <p class="lead">
-            The final experience connects market overview, options-chain
-            analysis and visual summaries into one workflow.
-          </p>
-
-
-          <div class="showcase">
-
-            <div class="image-placeholder">
-              FINAL DASHBOARD
-            </div>
-
-            <div class="caption">
-              Market overview — giving users a starting point before deeper analysis.
-            </div>
-
-          </div>
-
-
-          <div class="two-images">
-
-
-            <div class="showcase">
-
-              <div class="image-placeholder">
-                OPTIONS DATA VIEW
-              </div>
-
-              <div class="caption">
-                Detailed options data.
-              </div>
-
-            </div>
-
-
-            <div class="showcase">
-
-              <div class="image-placeholder">
-                SUMMARY VIEW
-              </div>
-
-              <div class="caption">
-                Condensed market summary.
-              </div>
-
-            </div>
-
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         11 — OUTCOME
-    ====================================================== -->
-
-    <section class="case-study-section section-border">
-
-      <div class="container section-grid">
-
-
-        <div class="section-aside">
-
-          <div class="section-number">
-            11
+            07
           </div>
 
           <div class="section-label">
@@ -1148,65 +634,95 @@
         <div class="content reveal">
 
           <h2>
-            A complex data product
-            became easier to read.
+            Making complex market data easier to explore and interpret.
           </h2>
 
-
-          <p class="lead">
-            The final design doesn't try to predict the market or hide the
-            complexity of F&O data.
-          </p>
-
-
           <p>
-            Instead, it gives that complexity structure.
+            The final design doesn't try to predict the market or hide the complexity of F&O data. Instead, it gives
+            that complexity structure, helping users move from a broad view of market activity to the details behind it.
           </p>
-
 
           <div class="outcome-grid">
 
 
-            <div class="outcome-card flex-column ">
+            <div class="outcome-card flex-column">
 
-              <h3>
-                See
-              </h3>
+              <span>
+                01
+              </span>
 
-              <p>
-                Understand where Open Interest and activity are concentrated.
-              </p>
-
-            </div>
-
-
-            <div class="outcome-card flex-column ">
-
-              <h3>
-                Compare
-              </h3>
-
-              <p>
-                Read Call and Put activity in the same context.
-              </p>
+              <strong>
+                Reduced cognitive load
+              </strong>
 
             </div>
 
 
-            <div class="outcome-card flex-column ">
+            <div class="outcome-card flex-column">
 
-              <h3>
-                Investigate
-              </h3>
+              <span>
+                02
+              </span>
 
-              <p>
-                Move from a high-level summary into detailed strike-level data.
-              </p>
+              <strong>
+                Better information hierarchy
+              </strong>
+
+            </div>
+
+
+            <div class="outcome-card flex-column">
+
+              <span>
+                03
+              </span>
+
+              <strong>
+                Faster data interpretation
+              </strong>
+
+            </div>
+
+
+            <div class="outcome-card flex-column">
+
+              <span>
+                04
+              </span>
+
+              <strong>
+                Reduced manual effort
+              </strong>
 
             </div>
 
 
           </div>
+
+          <div class="measurement-note">
+
+
+            <strong>
+              What I would measure
+            </strong>
+
+
+            <p>
+
+              If I were extending the project into post-launch UX evaluation, I would
+              measure
+              whether the redesigned
+              experience made analysis faster, clearer and less effortful, looking at analysis time, comparison time,
+              manual effort, user
+              confidence and time to complete the task.
+
+            </p>
+
+
+          </div>
+
+
+
 
         </div>
 
@@ -1267,9 +783,8 @@
           <div class="insight">
 
             <p>
-              When information is complex, the designer's job is not to
-              simplify the information itself — but to simplify the way
-              people navigate it.
+              Complex information doesn't always need to be simplified. It needs to be structured in a way that makes it
+              easier to navigate and understand.
             </p>
 
           </div>
@@ -1297,16 +812,13 @@
           </span>
 
           <h2>
-            Ranger Policy Editor
+            Making investing simpler for NRIs.
           </h2>
 
         </div>
 
 
-        <a
-          href="ranger.html"
-          class="next-link"
-        >
+        <a href="investment-onboarding.html" class="next-link">
           View case study →
         </a>
 
@@ -1320,10 +832,7 @@
          CONTACT
     ====================================================== -->
 
-    <section
-      class="contact-section"
-      id="contact"
-    >
+    <section class="contact-section" id="contact">
 
       <div class="container">
 
@@ -1339,10 +848,7 @@
         </h2>
 
 
-        <a
-          href="mailto:hello@example.com"
-          class="contact-link"
-        >
+        <a href="mailto:hello@example.com" class="contact-link">
           Let's talk
           <span>↗</span>
         </a>
@@ -1360,11 +866,7 @@
 
           <div class="social-links">
 
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="#" target="_blank" rel="noopener noreferrer">
               LinkedIn ↗
             </a>
 
@@ -1400,10 +902,7 @@
 
       <div>
 
-        <a
-          href="index.html"
-          class="logo"
-        >
+        <a href="index.html" class="logo">
           SJ<span>.</span>
         </a>
 
@@ -1421,10 +920,7 @@
       </span>
 
 
-      <a
-        href="#"
-        class="back-top"
-      >
+      <a href="#" class="back-top">
         Back to top ↑
       </a>
 
