@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Design System & UI Guidelines | UX Portfolio | Swapnil Jadhav</title>
+
+    <meta name="description"
+        content="UX case study by Swapnil Jadhav — establishing a robust design system with a structured grid, typography scale, semantic color palettes, and component states for enterprise scaling.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/case-study.css">
+
+    <!-- Inline token mapping extracted from the design guideline sheets -->
+    <style>
+        :root {
+            --primary-50: #E3F2FD;
+            --primary-100: #BBDEFB;
+            --primary-500: #1976D2;
+            --primary-700: #1565C0;
+            --primary-900: #0D47A1;
+
+            --secondary-50: #E0F2F1;
+            --secondary-100: #B2DFDB;
+            --secondary-500: #098576;
+            --secondary-700: #06675A;
+            --secondary-900: #034D43;
+
+            --tertiary-100: #DDE7EA;
+            --tertiary-500: #034858;
+            --tertiary-900: #012E34;
+
+            --accent-alert: #FF6F61;
+            --accent-success: #4CAF50;
+            --accent-warning: #FFC107;
+
+            --gray-50: #FAFAFA;
+            --gray-100: #EEEEEE;
+            --gray-500: #9E9E9E;
+            --gray-700: #424242;
+            --gray-900: #212121;
+        }
+
+        .design-token-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin: 24px 0;
+        }
+
+        .token-card {
+            background: var(--gray-50);
+            border: 1px solid var(--gray-100);
+            padding: 16px;
+            border-radius: 8px;
+        }
+
+        .token-swatch {
+            height: 40px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+       SHARED HEADER
+       Injected by js/components.js
+  ====================================================== -->
+
+    <div id="site-header"></div>
+
+
+    <main>
+
+        <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+        <header class="hero">
+
+            <div class="container">
+
+                <span class="eyebrow">
+                    Design Systems · Scalability · Foundation Architecture
+                </span>
+
+                <h1>
+                    Designing with Structure and Scale.
+                </h1>
+
+                <p class="hero-intro">
+                    Building a comprehensive, bulletproof design system spanning a rigorous 12-column grid,
+                    accessible typography hierarchy, semantic color tokens, and interactive component states.
+                </p>
+
+                <p class="nda-notice" style="font-size: 0.9rem; opacity: 0.8; margin-top: -10px; margin-bottom: 20px;">
+                    <em>Note: Built as a foundational design standard system to maintain component consistency across
+                        enterprise applications.</em>
+                </p>
+
+
+                <div class="hero-meta">
+
+                    <div class="meta-item">
+                        <span class="meta-label">Role</span>
+                        <span class="meta-value">
+                            Lead Systems Designer
+                        </span>
+                    </div>
+
+                    <div class="meta-item">
+                        <span class="meta-label">Type</span>
+                        <span class="meta-value">
+                            Design System Architecture
+                        </span>
+                    </div>
+
+                    <div class="meta-item">
+                        <span class="meta-label">Focus</span>
+                        <span class="meta-value">
+                            Tokens · Grids · Components
+                        </span>
+                    </div>
+
+                    <div class="meta-item">
+                        <span class="meta-label">Platform</span>
+                        <span class="meta-value">
+                            Multi-Platform UI Kit
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="hero-image reveal">
+
+                    <img src="assets/design-system/ds-hero.png" alt="Design System guidelines UI and components layout">
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =====================================================
+         01 — GRID SYSTEM
+    ====================================================== -->
+
+        <section class="section-border">
+
+            <div class="container section-grid">
+
+                <div>
+
+                    <div class="section-number">
+                        01
+                    </div>
+
+                    <div class="section-label">
+                        Grid system
+                    </div>
+
+                </div>
+
+
+                <div class="content reveal">
+
+                    <h2>
+                        Establishing structural rhythm and layout harmony
+                    </h2>
+
+                    <p>
+                        A scalable enterprise application starts with mathematical consistency. We engineered a robust
+                        structural layout framework to help teams build user interfaces with absolute consistency,
+                        readability, and speed.
+                    </p>
+
+                    <p>
+                        The structural grid uses a standardized layout matrix:
+                    </p>
+
+                    <ul>
+                        <li><strong>Margin:</strong> 24px outer horizontal page bound padding.</li>
+                        <li><strong>Gutter:</strong> 16px column-to-column spacing preventing visual clutter.</li>
+                        <li><strong>Columns:</strong> Fluid 12-column container configuration scaling seamlessly across
+                            screen resolutions.</li>
+                    </ul>
+
+                    <div class="showcase">
+
+                        <img src="assets/design-system/ds-grid.png" alt="12-column grid system layout guidelines">
+
+                        <div class="caption">
+                            The underlying structural column layout configured with 24px margins and 16px gutters.
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+         02 — TYPOGRAPHY HIERARCHY
+    ====================================================== -->
+
+        <section class="section-border">
+
+            <div class="container section-grid">
+
+                <div>
+
+                    <div class="section-number">
+                        02
+                    </div>
+
+                    <div class="section-label">
+                        Typography
+                    </div>
+
+                </div>
+
+
+                <div class="content reveal">
+
+                    <h2>
+                        Typefaces and scale hierarchy
+                    </h2>
+
+                    <p>
+                        Typography serves as the voice of the interface. We paired two high-performance font families to
+                        optimize reading clarity across dense enterprise tables and editorial components alike:
+                    </p>
+
+                    <p>
+                        <strong>Typefaces Used:</strong>
+                    </p>
+                    <ul>
+                        <li><strong>Primary (Display/Headlines):</strong> Manrope (Clean geometric structure for
+                            high-impact headers).</li>
+                        <li><strong>Secondary (Body/UI Data):</strong> DM Sans (Optimized for data legibility at smaller
+                            scales).</li>
+                    </ul>
+
+                    <p>
+                        <strong>Hierarchy Matrix:</strong>
+                    </p>
+                    <ul>
+                        <li><strong>H1 to H6:</strong> Ranging from 48px down to 18px with proportional line heights to
+                            maintain vertical rhythm.</li>
+                        <li><strong>Body & Captions:</strong> Structured from 16px regular down to 12px microcopy
+                            labels.</li>
+                    </ul>
+
+
+                    <div class="showcase">
+
+                        <img src="assets/design-system/ds-typography.png"
+                            alt="Typography typefaces, scale table, and text samples">
+
+                        <div class="caption">
+                            Comprehensive font metrics table detailing precise font sizes, line heights, and weights.
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+         03 — COLOR TOKEN SYSTEM
+    ====================================================== -->
+
+        <section class="dark-section">
+
+            <div class="container section-grid">
+
+                <div>
+
+                    <div class="section-number">
+                        03
+                    </div>
+
+                    <div class="section-label">
+                        Color tokens
+                    </div>
+
+                </div>
+
+
+                <div class="content reveal">
+
+                    <h2>
+                        Semantic color architecture
+                    </h2>
+
+                    <p>
+                        Colors in enterprise software must communicate meaning instantly while ensuring accessibility
+                        and contrast compliance. We designed a semantic color token system segmented into five key
+                        buckets:
+                    </p>
+
+                    <div class="design-token-grid">
+                        <div class="token-card">
+                            <div class="token-swatch" style="background: #1976D2;"></div>
+                            <strong>Primary (Blue)</strong>
+                            <p style="font-size: 0.85rem; margin-top: 4px;">Core actions, links, primary buttons
+                                (#1976D2).</p>
+                        </div>
+                        <div class="token-card">
+                            <div class="token-swatch" style="background: #098576;"></div>
+                            <strong>Secondary (Teal)</strong>
+                            <p style="font-size: 0.85rem; margin-top: 4px;">Secondary CTAs, tags, hover states
+                                (#098576).</p>
+                        </div>
+                        <div class="token-card">
+                            <div class="token-swatch" style="background: #034858;"></div>
+                            <strong>Tertiary (Deep Ocean)</strong>
+                            <p style="font-size: 0.85rem; margin-top: 4px;">Dark surfaces, card wrappers, navbars
+                                (#034858).</p>
+                        </div>
+                        <div class="token-card">
+                            <div class="token-swatch" style="background: #FF6F61;"></div>
+                            <strong>Accent (Status)</strong>
+                            <p style="font-size: 0.85rem; margin-top: 4px;">Alerts, errors, success tags, warnings
+                                (#FF6F61).</p>
+                        </div>
+                    </div>
+
+                    <p>
+                        <strong>Grayscale Foundation:</strong> Ranging from pure background surfaces
+                        (<code>#FAFAFA</code>) to deep charcoal typography headlines (<code>#212121</code>),
+                        guaranteeing high-contrast readability in dense enterprise conditions.
+                    </p>
+
+
+                    <div class="showcase">
+
+                        <img src="assets/design-system/ds-colors.png"
+                            alt="Color tokens spectrum including primary, secondary, tertiary, and status colors">
+
+                        <div class="caption">
+                            Full color token matrix with explicit hex codes and functional UI usage roles.
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+         04 — COMPONENT STATES & BUTTONS
+    ====================================================== -->
+
+        <section class="section-border">
+
+            <div class="container section-grid">
+
+                <div>
+
+                    <div class="section-number">
+                        04
+                    </div>
+
+                    <div class="section-label">
+                        Components
+                    </div>
+
+                </div>
+
+
+                <div class="content reveal">
+
+                    <h2>
+                        Standardized button states and interaction matrices
+                    </h2>
+
+                    <p>
+                        Buttons are foundational interactive components. To prevent visual inconsistency across teams,
+                        we mapped out explicit interactive states for every button variant:
+                    </p>
+
+                    <p>
+                    <ul>
+                        <li><strong>Default:</strong> Standard resting appearance with optimal contrast ratios.</li>
+                        <li><strong>Hover:</strong> Clear visual elevation or shade transition indicating interactivity.
+                        </li>
+                        <li><strong>Active / Pressed:</strong> Immediate tactile response signaling click engagement.
+                        </li>
+                        <li><strong>Disabled:</strong> Grayed-out lower-opacity state preventing premature actions.</li>
+                    </ul>
+                    </p>
+
+
+                    <div class="decision-list">
+
+                        <div class="decision">
+                            <div>
+                                <h3>Primary Actions</h3>
+                            </div>
+                            <div>
+                                <p>High-emphasis triggers styled with primary blue fills for core user task completion.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="decision">
+                            <div>
+                                <h3>Secondary Actions</h3>
+                            </div>
+                            <div>
+                                <p>Alternative auxiliary tasks using outlined or secondary teal treatments to reduce
+                                    visual weight.</p>
+                            </div>
+                        </div>
+
+                        <div class="decision">
+                            <div>
+                                <h3>Icon Integration</h3>
+                            </div>
+                            <div>
+                                <p>Paired contextual icons with text labels to streamline complex transactional
+                                    workflows.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="showcase">
+
+                        <img src="assets/design-system/ds-buttons.png"
+                            alt="Button components showcasing default, hover, active, and disabled states">
+
+                        <div class="caption">
+                            Component state matrix mapping primary, secondary, and tertiary button variations across all
+                            interactions.
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+         05 — SYSTEM IMPACT
+    ====================================================== -->
+
+        <section class="section-border">
+
+            <div class="container section-grid">
+
+                <div>
+
+                    <div class="section-number">
+                        05
+                    </div>
+
+                    <div class="section-label">
+                        System impact
+                    </div>
+
+                </div>
+
+
+                <div class="content reveal">
+
+                    <h2>
+                        Scaling product design with atomic efficiency
+                    </h2>
+
+                    <p>
+                        By centralizing grids, typography scales, tokens, and button patterns into a unified framework,
+                        product teams achieved significantly faster delivery velocity and eliminated design
+                        discrepancies.
+                    </p>
+
+                    <p>
+                        Developers and designers now speak a common tokenized language, reducing design debt and
+                        ensuring absolute compliance across complex operational interfaces.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+         NEXT PROJECT
+    ====================================================== -->
+
+        <section class="next-project">
+
+            <div class="container next-project-inner">
+
+                <div>
+
+                    <span class="eyebrow">
+                        Next case study
+                    </span>
+
+                    <h2>
+                        XBI Mutual Fund Portal
+                    </h2>
+
+                </div>
+
+
+                <a href="xbi-mutual-fund.html" class="next-link">
+                    View case study →
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =====================================================
+       SHARED CONTACT
+       Injected by js/components.js
+  ====================================================== -->
+
+    <div id="site-contact"></div>
+
+
+    <!-- =====================================================
+       SHARED FOOTER
+       Injected by js/components.js
+  ====================================================== -->
+
+    <div id="site-footer"></div>
+
+
+    <!-- =====================================================
+       SHARED COMPONENTS
+  ====================================================== -->
+
+    <script src="js/components.js"></script>
+
+
+    <!-- =====================================================
+       PAGE JAVASCRIPT
+  ====================================================== -->
+
+    <script>
+
+        const revealElements =
+            document.querySelectorAll(".reveal");
+
+        const observer =
+            new IntersectionObserver(
+                (entries) => {
+
+                    entries.forEach((entry) => {
+
+                        if (entry.isIntersecting) {
+
+                            entry.target.classList.add("visible");
+
+                            observer.unobserve(entry.target);
+
+                        }
+
+                    });
+
+                },
+                {
+                    threshold: 0.12
+                }
+            );
+
+
+        revealElements.forEach((element) => {
+            observer.observe(element);
+        });
+
+    </script>
+
+
+</body>
+
+</html>
