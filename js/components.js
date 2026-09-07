@@ -134,9 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             <p>
 
-              Open to product design roles,
-              interesting collaborations and
-              conversations about design.
+              Open to paid product design roles, projects, and consulting.
 
             </p>
 
@@ -205,22 +203,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="container footer-inner">
 
 
-          <div>
-
-            <a
-              href="index.html"
-              class="logo"
-            >
-              SJ<span>.</span>
-            </a>
-
-
-            <p>
-              UI/UX Designer crafting thoughtful
-              digital experiences.
-            </p>
-
-          </div>
+         
 
 
           <span>
@@ -228,12 +211,6 @@ document.addEventListener("DOMContentLoaded", function () {
           </span>
 
 
-          <a
-            href="#"
-            class="back-top"
-          >
-            Back to top ↑
-          </a>
 
 
         </div>
