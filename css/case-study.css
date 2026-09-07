@@ -78,6 +78,14 @@
   color: var(--muted);
 }
 
+.nda-notice {
+  font-size: 0.9rem !important;
+  margin-top: 30px !important;
+  margin-bottom: 20px !important;
+  max-width: 680px;
+  opacity: 0.5;
+}
+
 .hero h1 {
   max-width: 950px;
 
@@ -282,7 +290,8 @@ section {
   color: var(--dark);
 }
 
-.content p {
+.content p,
+.content ul li {
   margin-bottom: 22px;
 
   font-size: 18px;
@@ -290,6 +299,10 @@ section {
   line-height: 1.7;
 
   color: #555;
+}
+
+ul {
+  list-style: inside
 }
 
 .content p:last-child {
@@ -368,7 +381,8 @@ section {
   color: #fff;
 }
 
-.dark-section .content p {
+.dark-section .content p,
+.dark-section .content ul li {
   color: #b5b5b5;
 }
 
