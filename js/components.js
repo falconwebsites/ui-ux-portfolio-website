@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
           <a
-            href="index.html#contact"
+            href="mailto:falconwebsites.in@gmail.com"
             class="nav-cta"
           >
 
@@ -154,9 +154,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
               <a
-                href="mailto:hello@example.com"
+                href="mailto:falconwebsites.in@gmail.com"
               >
                 Email ↗
+              </a>
+
+              <a href="https://wa.me/918828060253">
+                WhatsApp ↗
               </a>
 
 
