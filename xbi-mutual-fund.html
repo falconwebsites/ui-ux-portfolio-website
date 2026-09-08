@@ -9,7 +9,7 @@
     <title>XBI Mutual Fund — Back-Office Operations Portal | UX Case Study | Swapnil Jadhav</title>
 
     <meta name="description"
-        content="UX case study by Swapnil Jadhav — redesigning a back-office operations portal for SBI Mutual Fund to make complex, high-value transaction workflows easier to manage and operate.">
+        content="UX case study by Swapnil Jadhav — designing a high-density back-office operations portal for XBI Mutual Fund to manage institutional gold primary market transactions.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,17 +51,17 @@
                 </span>
 
                 <h1>
-                    Designing the control room for institutional gold trading.
+                    Designing the institutional control room for Gold ETF primary market operations.
                 </h1>
 
                 <p class="hero-intro">
-                    A deep dive into redesigning the listing tables, detail views, and workflows
-                    for XBI Mutual Fund's back-office operations portal.
+                    A deep dive into building a high-density, error-proof back-office platform for XBI Mutual Fund
+                    to manage multi-crore physical-to-digital creation workflows.
                 </p>
-                <!-- NDA Disclaimers Added Here -->
+                <!-- NDA Disclaimers -->
                 <p class="nda-notice" style="font-size: 0.9rem;">
                     <em>Note: Client name has been anonymized to XBI Mutual Fund to comply with NDA terms. UI details
-                        and workflows have been generalized while preserving core product logic.</em>
+                        and workflows have been generalized while preserving core institutional product logic.</em>
                 </p>
 
 
@@ -77,14 +77,14 @@
                     <div class="meta-item">
                         <span class="meta-label">Type</span>
                         <span class="meta-value">
-                            Enterprise Product
+                            Enterprise Fintech Portal
                         </span>
                     </div>
 
                     <div class="meta-item">
                         <span class="meta-label">Focus</span>
                         <span class="meta-value">
-                            UX · UI · Interaction
+                            Data Density · Workflows
                         </span>
                     </div>
 
@@ -100,7 +100,7 @@
 
                 <div class="hero-image reveal">
 
-                    <img src="assets/xbi-mutual-fund/xbi-hero.png" alt="XBI Mutual Fund back-office operations portal">
+                    <img src="images/xbi/gold-xbi-transactions.png" alt="XBI Mutual Fund back-office operations portal">
 
                 </div>
 
@@ -110,7 +110,7 @@
 
 
         <!-- =====================================================
-         01 — CONTEXT
+         01 — CONTEXT & SYSTEM PURPOSE
     ====================================================== -->
 
         <section class="section-border">
@@ -124,7 +124,7 @@
                     </div>
 
                     <div class="section-label">
-                        The context
+                        The problem space
                     </div>
 
                 </div>
@@ -133,24 +133,29 @@
                 <div class="content reveal">
 
                     <h2>
-                        What is a Back-Office (BO) portal?
+                        What does this application actually do?
                     </h2>
 
                     <p>
-                        When everyday users invest in a mutual fund, they see a simple app screen.
-                        But behind the scenes, massive institutional deals take place—such as SBI Mutual Fund
-                        purchasing kilograms of physical gold to back their investment schemes.
+                        When retail investors buy units of a Gold ETF on public stock exchanges like the NSE or BSE,
+                        they see a simple broker interface. However, those digital units must be backed entirely by
+                        real, physical gold stored securely in certified vaults.
                     </p>
 
                     <p>
-                        This portal is the Back-Office (BO) control room. It is where internal operations
-                        staff handle the heavy lifting: tracking multi-lakh trades, managing bank transfers,
-                        generating legal paperwork, and maintaining compliance records.
+                        This application is the <strong>Primary Market Operations Portal</strong>—the private
+                        back-office
+                        control room used by the fund house (XBI Mutual Fund) and institutional Authorized Participants
+                        (such as Rakesh Sharma). It bridges the wholesale physical bullion market and the digital
+                        exchange.
                     </p>
 
                     <p>
-                        The design goal was to turn a heavy, complex maze of financial data into a clean,
-                        scannable system where operators can work fast without making high-stakes errors.
+                        Operators use this system to record, verify, and settle massive creation transactions—such as
+                        procuring kilograms of physical gold from wholesale refiners (like Augmont or Parshwa),
+                        coordinating
+                        split-bank RTGS payments across institutions like HDFC, Axis, and ICICI, and generating vault
+                        storage instructions.
                     </p>
 
                 </div>
@@ -161,7 +166,7 @@
 
 
         <!-- =====================================================
-         02 — WORKFLOW
+         02 — INSTITUTIONAL WORKFLOW & ROLES
     ====================================================== -->
 
         <section class="section-border">
@@ -175,7 +180,7 @@
                     </div>
 
                     <div class="section-label">
-                        The workflow
+                        Institutional actors & lifecycle
                     </div>
 
                 </div>
@@ -184,42 +189,47 @@
                 <div class="content reveal">
 
                     <h2>
-                        How a trade moves through the system
+                        How an institutional investor trade is executed
                     </h2>
 
                     <p>
-                        To understand the UI, you first need to understand how a deal happens. Every transaction
-                        follows a strict safety-first lifecycle involving two key operational roles:
+                        Transactions in the primary market involve high capital volumes and require a strict, multi-step
+                        governance model to prevent multi-crore errors. The workflow follows a strict maker-checker
+                        framework:
                     </p>
 
                     <p>
-                        <strong>1. The Maker (e.g., Hawkins Maru):</strong> The operator who logs the initial trade data
-                        into the system (e.g., buying 4 KGs of gold for ₹50,00,000 from a vendor like Augmont).
-                        When entered, the trade status is marked as <em>Entered</em> or <em>Pending</em>.
+                        <strong>1. The Maker (Data Entry):</strong> An institutional operations user (e.g., Hawkins
+                        Maru, logged in as BO Maker)
+                        records the transaction details submitted by an Authorized Participant like <em>Rakesh
+                            Sharma</em>. This includes mapping
+                        the PAN (e.g., DJLAJ3929M), Folio (e.g., SJ24), exact weight in kilograms (e.g., 10 KG), deal
+                        value (e.g., ₹50,00,000),
+                        deposit bank, and counterparty refiner.
                     </p>
 
                     <p>
-                        <strong>2. The System Deal Confirmation (DC):</strong> Once a trade is logged, the system
-                        automatically
-                        generates a formal trade receipt called a <strong>Deal Confirmation (DC)</strong>.
+                        <strong>2. System Deal Confirmation (DC):</strong> Upon successful entry, the system
+                        automatically tags the record
+                        with an <em>Entered</em> status and generates internal compliance documentation.
                     </p>
 
                     <p>
-                        <strong>3. The Checker (Supervisor):</strong> A separate senior staff member who reviews the
-                        entered
-                        details, checks valuation files, and clicks <strong>Authorize</strong> so money can securely
-                        move via
-                        bank networks like RTGS.
+                        <strong>3. The Checker (Authorization):</strong> A senior supervisor reviews the multi-leg bank
+                        routing and vault details,
+                        then authorizes the record so money can safely transfer via RTGS and physical bullion can be
+                        credited to the vault.
                     </p>
 
 
                     <div class="showcase">
 
-                        <img src="assets/sbi-mutual-fund/sbi-workflow.png"
-                            alt="SBI Mutual Fund back-office transaction workflow">
+                        <img src="images/xbi/gold-trade-workflow.png"
+                            alt="XBI Mutual Fund institutional transaction workflow">
 
                         <div class="caption">
-                            The step-by-step lifecycle of a trade from data entry to final authorization.
+                            The multi-stage institutional lifecycle tracking an Authorized Participant order from entry
+                            to authorization.
                         </div>
 
                     </div>
@@ -232,7 +242,7 @@
 
 
         <!-- =====================================================
-         03 — DISCOVERY & PROCESSING
+         03 — PRECISION UI: THE SEARCH & FILTER BAR
     ====================================================== -->
 
         <section class="dark-section">
@@ -246,7 +256,7 @@
                     </div>
 
                     <div class="section-label">
-                        The listing page
+                        Advanced filtering
                     </div>
 
                 </div>
@@ -255,53 +265,38 @@
                 <div class="content reveal">
 
                     <h2>
-                        Anatomy of a transaction row
+                        Granular search for complex data audits
                     </h2>
 
                     <p>
-                        The listing page is the master dashboard where operators monitor hundreds of active deals.
-                        Because space is valuable, every single row in the table is packed with essential metadata
-                        designed to be read at a single glance.
+                        Operations teams do not browse data casually; they look up exact records under tight compliance
+                        deadlines.
+                        At the top of the dashboard, I designed a multi-parameter filtering toolbar built specifically
+                        for institutional identifiers.
                     </p>
 
                     <p>
-                        <strong>What data lives in each row?</strong>
+                        <strong>Key filter attributes built into the toolbar:</strong>
                     <ul>
-                        <li><strong>ID & Dates:</strong> Unique transaction ID (e.g., ID 01) alongside the transaction
-                            date and value settlement date.</li>
-                        <li><strong>Financials & Assets:</strong> Exact quantity in kilograms (e.g., 4 KG) and total
-                            deal value in INR (e.g., ₹50,00,000).</li>
-                        <li><strong>Banking & Partners:</strong> The deposit bank used (like HDFC or ICICI) and the
-                            wholesale counterparty/vendor (like Augmont).</li>
-                        <li><strong>Logistics:</strong> Security type (GOLD), vault location (Delhi, Mum), and
-                            settlement tenor (e.g., T or T+1).</li>
+                        <li><strong>TXN Date Picker:</strong> Instantly isolates deals executed on a specific calendar
+                            date (e.g., Jun 05, 2022).</li>
+                        <li><strong>PAN Input Field:</strong> Directly queries permanent account numbers (e.g.,
+                            DJLAJ3929M) to track specific institutional entities.</li>
+                        <li><strong>Folio Input Field:</strong> Filters portfolio ledger accounts (e.g., SJ24) to track
+                            ongoing allocations.</li>
+                        <li><strong>Global Search & Reset:</strong> Allows free-text searching across names and IDs with
+                            a quick-reset action to clear query parameters instantly.</li>
                     </ul>
-                    </p>
-
-                    <p>
-                        <strong>Status Badges & Inline Actions:</strong> Each row features a live status tag (like
-                        <em>Entered</em>,
-                        <em>Authorized</em>, or <em>DC Generated</em>). Next to these, we placed inline document icons
-                        and action links
-                        (such as <em>Email DC</em> or instant PDF downloads).
-                    </p>
-
-                    <p>
-                        <em>UX Detail:</em> When a deal is brand new, these icons are hidden. They only light up
-                        dynamically
-                        once the transaction reaches a valid stage, preventing operators from trying to download
-                        documents that don't exist yet.
                     </p>
 
 
                     <div class="showcase">
 
-                        <img src="assets/xbi-mutual-fund/xbi-transaction-list.png"
-                            alt="XBI Mutual Fund transaction list with search and filters">
+                        <img src="images/xbi/search.png" alt="XBI Mutual Fund search and filter toolbar">
 
                         <div class="caption">
-                            The listing table showing row data breakdown, status badges, and inline quick-download
-                            icons.
+                            The top search header equipped with precise filters for Transaction Date, PAN, and Folio
+                            numbers.
                         </div>
 
                     </div>
@@ -314,7 +309,7 @@
 
 
         <!-- =====================================================
-         04 — OPERATIONAL EFFICIENCY
+         04 — HIGH-DENSITY ROW DESIGN & ACTIONS
     ====================================================== -->
 
         <section class="section-border">
@@ -328,7 +323,7 @@
                     </div>
 
                     <div class="section-label">
-                        Bulk actions
+                        Row anatomy & actions
                     </div>
 
                 </div>
@@ -337,28 +332,106 @@
                 <div class="content reveal">
 
                     <h2>
-                        Batch processing heavy workloads
+                        Engineering high data density into a single row
                     </h2>
 
                     <p>
-                        Operations teams often handle dozens of similar trades executed on the exact same day.
-                        Clicking into every single row to perform individual approvals or generate bank documents
-                        would create massive bottlenecks and human fatigue.
+                        In enterprise portals, forcing operators to click into individual rows just to see basic details
+                        creates massive workflow friction.
+                        I designed a structured grid card layout within each table row that packs critical financial
+                        data into a clean, scannable format.
                     </p>
 
                     <p>
-                        To solve this, I designed a Bulk Actions menu at the top of the table. By selecting multiple
-                        row checkboxes, operators can execute batch operations instantly:
-                    </p>
-
-                    <p>
+                        <strong>Anatomy of a single record row:</strong>
                     <ul>
-                        <li><strong>Authorise / Reject:</strong> Mass-approving or declining a selected group of trades.
+                        <li><strong>Identifiers:</strong> Transaction ID (e.g., ID 01, ID 02) paired with the investor's
+                            name (<em>Rakesh Sharma</em>),
+                            PAN, and Folio number stacked neatly on the left.</li>
+                        <li><strong>Financial & Operational Core:</strong> Clear breakdown of transaction dates, exact
+                            quantities in kilograms (e.g., 10 KG),
+                            total deal values in INR, settlement tenors (T or T+1), and value dates.</li>
+                        <li><strong>Banking & Logistics:</strong> Explicit display of the deposit bank used (HDFC, SBI,
+                            AXIS, ICICI),
+                            counterparty wholesale refiner (Augmont, Parshwa, Kalamandir, Kundan Group), security type
+                            (Gold), and vault storage location (Delhi).</li>
+                        <li><strong>Status & Inline Actions:</strong> A prominent status badge (<em>Entered</em>)
+                            accompanied by a set of quick-action icons on the far right: <br><strong>Eye Icon:</strong>
+                            for
+                            quick-preview;
+                            <br><strong>Download Icon:</strong> Instantly fetches the generated Deal Confirmation
+                            (DC) or RTGS document without navigating away; <br><strong>Three-Dot Menu:</strong> Opens
+                            context-aware
+                            secondary
+                            actions (such as
+                            email dispatch or audit logs).
+
                         </li>
-                        <li><strong>Custodian Instruction:</strong> Generating vault storage paperwork in bulk.</li>
-                        <li><strong>RTGS / NEFT Letter:</strong> Issuing combined institutional bank transfer payment
-                            instructions.</li>
                     </ul>
+                    </p>
+
+
+                    <div class="showcase">
+
+                        <img src="images/xbi/gold-xbi-transactions.png"
+                            alt="XBI Mutual Fund high-density row design with quick actions">
+
+                        <div class="caption">
+                            A detailed row structure displaying complete metadata, status tags, and precision inline
+                            utility icons (Eye, Download, 3-dots).
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+         05 — BULK OPERATIONS & STATE SAFETY
+    ====================================================== -->
+
+        <section class="section-border">
+
+            <div class="container section-grid">
+
+                <div>
+
+                    <div class="section-number">
+                        05
+                    </div>
+
+                    <div class="section-label">
+                        Batch processing
+                    </div>
+
+                </div>
+
+
+                <div class="content reveal">
+
+                    <h2>
+                        State-governed bulk actions for institutional scale
+                    </h2>
+
+                    <p>
+                        Handling dozens of multi-lakh trades individually causes severe operational bottlenecks. To
+                        solve this, I designed a batch-processing controls menu allowing operators to select multiple
+                        rows via checkboxes to execute administrative batch commands—such as bulk RTGS payment letter
+                        generation and document exports. Crucially, mass-authorization was intentionally excluded from
+                        bulk controls to preserve strict Maker-Checker compliance; high-risk approvals must always be
+                        performed on an individual, case-by-case basis to prevent multi-crore errors.
+                    </p>
+
+                    <p>
+                        To eliminate compliance risks, these administrative bulk operations are strictly state-governed.
+                        Operators must ensure selected rows share an identical lifecycle state (such as strictly Entered
+                        status) before generating batch paperwork. If mixed or ineligible states are detected, the
+                        system safely blocks batch generation, ensuring documents are only exported for transactions
+                        matching the precise stage required.
                     </p>
 
 
@@ -375,7 +448,7 @@
 
                             <div>
                                 <p>
-                                    Allows operators to select rows in bulk to apply simultaneous commands.
+                                    Enables instant batch selection across structured rows for simultaneous processing.
                                 </p>
                             </div>
 
@@ -386,13 +459,14 @@
 
                             <div>
                                 <h3>
-                                    Batch bank letters
+                                    State validation gating
                                 </h3>
                             </div>
 
                             <div>
                                 <p>
-                                    Generates single-file RTGS payment letters for multiple trade orders at once.
+                                    Prevents accidental batch execution on mixed-status rows to maintain strict
+                                    regulatory compliance.
                                 </p>
                             </div>
 
@@ -409,7 +483,8 @@
 
                             <div>
                                 <p>
-                                    Provides one-click file downloads straight from the row without extra navigation.
+                                    Provides rapid document generation via row-level download icons without extra page
+                                    navigation.
                                 </p>
                             </div>
 
@@ -419,16 +494,15 @@
                     </div>
 
 
-                    <div class="showcase">
+                    <!-- <div class="showcase">
 
-                        <img src="assets/xbi-mutual-fund/xbi-bulk-actions.png"
-                            alt="XBI Mutual Fund bulk transaction actions">
+                        <img src="assets/xbi-mutual-fund/xbi-bulk-actions.png" alt="XBI Mutual Fund bulk action system">
 
                         <div class="caption">
-                            Bulk action dropdown allowing users to process multiple rows simultaneously.
+                            The bulk actions dropdown menu allowing safe, multi-row batch execution.
                         </div>
 
-                    </div>
+                    </div> -->
 
                 </div>
 
@@ -438,75 +512,10 @@
 
 
         <!-- =====================================================
-         05 — MAKER CHECKER
+         06 — FINAL EXPERIENCE & IMPACT
     ====================================================== -->
 
         <section class="section-border">
-
-            <div class="container section-grid">
-
-                <div>
-
-                    <div class="section-number">
-                        05
-                    </div>
-
-                    <div class="section-label">
-                        The detail view
-                    </div>
-
-                </div>
-
-
-                <div class="content reveal">
-
-                    <h2>
-                        Deep-dive inspection and next actions
-                    </h2>
-
-                    <p>
-                        When an operator clicks on a specific row from the listing page (e.g., ID 02), they enter the
-                        Detail View. This page is structured to provide deep inspection without visual clutter.
-                    </p>
-
-                    <p>
-                        <strong>What lives on the detail page?</strong>
-                    <ul>
-                        <li><strong>Metadata Grid:</strong> Full breakdown including Scheme Name (SBI MF Gold ETF),
-                            Deposit Type (RTGS), Quantity in KGs, Unit mapping (1 KG = 1000 Units), and Deposit Dates.
-                        </li>
-                        <li><strong>Guided Action Button:</strong> A prominent primary CTA (e.g., <em>NEXT ACTION:
-                                AUTHORIZE DC</em>) that explicitly tells the user what operational step to perform next,
-                            preventing guesswork.</li>
-                        <li><strong>Files Generated Section:</strong> Direct download links for compliance files created
-                            during this trade lifecycle, such as Custodian Instructions and Deal Confirmations.</li>
-                    </ul>
-                    </p>
-
-
-                    <div class="showcase">
-
-                        <img src="assets/xbi-mutual-fund/xbi-maker-checker.png"
-                            alt="XBI Mutual Fund Maker Checker authorization workflow">
-
-                        <div class="caption">
-                            The detail view layout showing complete record metadata and guided next-action triggers.
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-         06 — AUDITABILITY
-    ====================================================== -->
-
-        <section class="dark-section">
 
             <div class="container section-grid">
 
@@ -517,7 +526,7 @@
                     </div>
 
                     <div class="section-label">
-                        Audit trail
+                        The outcome
                     </div>
 
                 </div>
@@ -526,208 +535,34 @@
                 <div class="content reveal">
 
                     <h2>
-                        Tracking every action on the right sidebar
+                        A controlled, high-efficiency control room
                     </h2>
 
                     <p>
-                        In institutional finance, complete accountability is mandatory. Regulators need to know
-                        not just where a transaction stands, but its exact historical timeline.
+                        The final design successfully replaces heavy, error-prone manual spreadsheets with a structured,
+                        enterprise-grade operations platform.
                     </p>
 
                     <p>
-                        On the right side of the detail page, I designed a Remarks & Activity Sidebar.
-                        This is a chronological audit trail that logs every single action down to the minute:
-                    </p>
-
-                    <p>
-                    <ul>
-                        <li>“Valuation File was authorized by Ms. Jane Smith — 48 min ago”</li>
-                        <li>“Custodian Instruction was generated — 32 min ago”</li>
-                        <li>“This Transaction has been authorized — 20 min ago”</li>
-                    </ul>
-                    </p>
-
-                    <p>
-                        This persistent sidebar ensures absolute transparency, protecting the institution against
-                        compliance risks or audit failures.
+                        By combining advanced metadata search tools, information-rich row cards with instant download
+                        utilities,
+                        and strict state-gated bulk workflows, XBI Mutual Fund’s operations team can now process
+                        high-value primary market
+                        transactions with absolute clarity, speed, and regulatory confidence.
                     </p>
 
 
-                    <div class="showcase">
-
-                        <img src="assets/xbi-mutual-fund/xbi-audit-trail.png"
-                            alt="XBI Mutual Fund transaction audit trail">
-
-                        <div class="caption">
-                            The chronological remarks sidebar providing real-time transparency and audit history.
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-         07 — KEY DESIGN DECISION
-    ====================================================== -->
-
-        <section class="section-border">
-
-            <div class="container section-grid">
-
-                <div>
-
-                    <div class="section-number">
-                        07
-                    </div>
-
-                    <div class="section-label">
-                        Key design decision
-                    </div>
-
-                </div>
-
-
-                <div class="content reveal">
-
-                    <h2>
-                        Structuring data density instead of hiding it
-                    </h2>
-
-                    <p>
-                        A common trap in enterprise UX is trying to make complex financial software look like
-                        a minimalist consumer app by stripping away information.
-                    </p>
-
-                    <p>
-                        However, back-office operators <em>need</em> to see transaction values, bank codes,
-                        tenors, and PAN numbers simultaneously to do their jobs correctly.
-                    </p>
-
-                    <p>
-                        Instead of hiding data, my design decision was to organize and structure complexity:
-                        using scannable table rows, conditional action icons that appear only when relevant,
-                        and guided next-step buttons to reduce cognitive load.
-                    </p>
-
-
-                    <div class="decision-list">
-
-
-                        <div class="decision">
-
-                            <div>
-                                <h3>
-                                    Data-rich rows
-                                </h3>
-                            </div>
-
-                            <div>
-                                <p>
-                                    Displayed complete trade attributes directly in the table to minimize unnecessary
-                                    clicking.
-                                </p>
-                            </div>
-
-                        </div>
-
-
-                        <div class="decision">
-
-                            <div>
-                                <h3>
-                                    Contextual tools
-                                </h3>
-                            </div>
-
-                            <div>
-                                <p>
-                                    Used dynamic icons and bulk dropdowns so actions match the exact lifecycle state.
-                                </p>
-                            </div>
-
-                        </div>
-
-
-                        <div class="decision">
-
-                            <div>
-                                <h3>
-                                    Clear accountability
-                                </h3>
-                            </div>
-
-                            <div>
-                                <p>
-                                    Paired a guided detail view with a persistent audit timeline for total security.
-                                </p>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-         08 — FINAL EXPERIENCE
-    ====================================================== -->
-
-        <section class="section-border">
-
-            <div class="container section-grid">
-
-                <div>
-
-                    <div class="section-number">
-                        08
-                    </div>
-
-                    <div class="section-label">
-                        Final experience
-                    </div>
-
-                </div>
-
-
-                <div class="content reveal">
-
-                    <h2>
-                        A clear, controlled digital control room
-                    </h2>
-
-                    <p>
-                        The final design successfully transforms a complex institutional operation into a smooth,
-                        transparent experience.
-                    </p>
-
-                    <p>
-                        From scannable listing rows and instant document downloads to secure maker-checker details
-                        and robust audit trails, operations teams can now manage heavy multi-lakh asset flows
-                        with speed, absolute clarity, and confidence.
-                    </p>
-
-
-                    <div class="showcase">
+                    <!-- <div class="showcase">
 
                         <img src="assets/xbi-mutual-fund/xbi-final.png"
                             alt="Final XBI Mutual Fund back-office operations interface">
 
                         <div class="caption">
-                            The finalized operations portal balancing high data density with smooth usability.
+                            The completed operations portal interface balancing high data density with smooth, intuitive
+                            human-computer interaction.
                         </div>
 
-                    </div>
+                    </div> -->
 
                 </div>
 

@@ -303,7 +303,8 @@ section {
 }
 
 ul {
-  list-style: inside
+  list-style: outside;
+  margin-left: 18px
 }
 
 .content p:last-child {
