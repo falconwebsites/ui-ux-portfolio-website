@@ -114,20 +114,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
           </h2>
 
+ <div style="display:flex; gap:24px;">
+          <a href="tel:+918828060253" class="contact-link">Call: +91 8828 060 253</a>
+          <a href="mailto:falconwebsites.in@gmail.com" class="contact-link">
 
-          <a
-            href="mailto:hello@example.com"
-            class="contact-link"
-          >
-
-            Let's talk
-
-            <span>
-              ↗
-            </span>
+            Email
 
           </a>
-
+        </div>
 
           <div class="contact-bottom">
 
@@ -138,41 +132,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
             </p>
 
+  <div class="social-links">
 
-            <div class="social-links">
+            <a href="https://www.linkedin.com/in/swapnil-jadhav-2b11a6337/" target="_blank">
+              LinkedIn ↗
+            </a>
 
+            <a href="mailto:falconwebsites.in@gmail.com" target="_blank" rel="noopener noreferrer">
+              Email ↗
+            </a>
+            <a href="https://wa.me/918828060253" target="_blank" rel="noopener noreferrer">
+              WhatsApp ↗
+            </a>
 
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                LinkedIn ↗
-              </a>
+            <a href="Swapnil Jadhav UI UX Designer Sep 2026.pdf" target="_blank" rel="noopener noreferrer">
+              Resume ↗
+            </a>
 
-
-              <a
-                href="mailto:falconwebsites.in@gmail.com"
-              >
-                Email ↗
-              </a>
-
-              <a href="https://wa.me/918828060253">
-                WhatsApp ↗
-              </a>
-
-
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Resume ↗
-              </a>
-
-
-            </div>
-
+          </div>
 
           </div>
 
