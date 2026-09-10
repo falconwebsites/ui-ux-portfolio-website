@@ -322,6 +322,75 @@ ul {
   margin-top: 0 !important
 }
 
+
+.figma-link-wrapper {
+  align-items: center !important;
+  grid-template-columns: 1fr !important;
+  gap: 40px !important
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #6e8efb, #a777e3) !important;
+}
+
+.figma-link-wrapper .section-label {
+  color: white !important;
+  text-align: center;
+}
+
+.figma-link-wrapper .content {
+  max-width: 100% !important;
+  text-align: center;
+}
+
+/* custom button */
+
+.cta-btn {
+  /* Layout & Typography */
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  /* font-family: 'Segoe UI', system-ui, sans-serif; */
+  font-size: 16px;
+  font-weight: 600;
+
+  /* Initial State: Solid White */
+  color: #000000;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 24px;
+  cursor: pointer;
+
+  /* Drop shadow that blends nicely on gradients */
+  /* box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15); */
+
+  /* Smooth Transition */
+  transition: all 0.25s ease-in-out;
+}
+
+/* Hover State: Inverts to Black */
+.cta-btn:hover {
+  color: #ffffff;
+  background-color: #000000;
+  border-color: #000000;
+  /* transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25); */
+}
+
+/* Focus State (Accessibility) */
+.cta-btn:focus-visible {
+  outline: none;
+  /* Creates a clean white ring followed by a dark ring */
+  /* box-shadow: 0 0 0 3px #ffffff, 0 0 0 6px #000000; */
+}
+
+/* Active State (Pressed) */
+.cta-btn:active {
+  /* transform: translateY(1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); */
+}
+
 /* =========================================================
    INSIGHT
 ========================================================= */
